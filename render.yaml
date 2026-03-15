@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ytmusic-server
+    env: node
+    buildCommand: npm install && pip install yt-dlp
+    startCommand: node server.js
+    plan: free
